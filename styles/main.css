@@ -50,6 +50,12 @@ li {
 h2.smargin{
   margin-bottom: 0;
 }
+#todo{
+  background-image: url('../img/hero/hero_city.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 50vw;
+}
 #greeting{
   style="width: 100%;
   height: auto;
