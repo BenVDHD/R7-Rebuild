@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  color: #3d3d3d;
+}
 /* css styles */
 a{
   color: inherit;
@@ -44,6 +48,30 @@ li {
 h2.smargin{
   margin-bottom: 0;
 }
+#greeting{
+  style="width: 100%;
+  height: auto;
+  padding: .2em;
+  background-color:  #85e085;
+  cursor: hand;
+  display: none;
+}
+.fifty{
+  width: 50%;
+}
+.dropee{
+  display: none;
+}
+.sds{
+  padding: .20rem;
+  background-color: #ff8080;
+
+}
+.sd{
+  padding: .20rem;
+  background-color: #ff6666;
+}
+
 .tb {
   border: solid .5px #3d3d3d;
 }
