@@ -51,10 +51,17 @@ h2.smargin{
   margin-bottom: 0;
 }
 #todo{
-  background-image: url('../img/hero/hero_city.jpg');
+  background-image: url('../img/gen/city.jpg');
   background-position: center;
   background-size: cover;
   height: 50vw;
+}
+#map{
+  background-image: url('../img/gen/map.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 50vw;
+
 }
 #greeting{
   style="width: 100%;
@@ -63,6 +70,45 @@ h2.smargin{
   background-color:  #85e085;
   cursor: hand;
   display: none;
+}
+#dsicon{
+margin: 0 auto;
+width: 100%;
+height: calc(15vw + 3px);
+}
+.xsicon{
+  width: 15%;
+  height: 15vw;
+  margin: .5%;
+  position: relative;
+  left: 25%;
+}
+.offercube img{
+  margin-top: 24px;
+  width: 25%;
+  height: 25vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+.offercube hr{
+  margin-bottom: 0;
+}
+.offercube h3{
+  margin: 0;
+  padding: 4px;
+  padding-top: 10px;
+}
+.offercube p{
+  margin-top: 10px;
+}
+img.mimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 75vw;
 }
 .fifty{
   width: 50%;

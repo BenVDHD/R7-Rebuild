@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -9,32 +10,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"></meta>
   <!-- <meta name="viewport" content="user-scalable = yes"> -->
   <script>
-    $(document).ready(function(){
-        $("#oStoreLoc").click(function(){
-            $("#cStoreLoc").slideToggle(300);
-        });
-        $("#oStoreHrs").click(function(){
-            $("#cStoreHrs").slideToggle(300);
-        });
-        $("#oFind").click(function(){
-            $("#cFind").slideToggle(300);
-        });
+    $(document).ready(function() {
+      $("#oStoreLoc").click(function() {
+        $("#cStoreLoc").slideToggle(300);
+      });
+      $("#oStoreHrs").click(function() {
+        $("#cStoreHrs").slideToggle(300);
+      });
+      $("#oFind").click(function() {
+        $("#cFind").slideToggle(300);
+      });
     });
-   </script>
-</head >
-<body >
-    <nav>
-      <a href="#"><div style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div></a>
-      <a href="index.html"><div style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div></a>
 
-    </nav>
-    <div class="hero">
-      <!-- Contain hero image -->
-      <h2 class="m_hide"> There's No Laundromat Quite
+  </script>
+</head>
+
+<body>
+  <nav>
+    <a href="#">
+      <div style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
+    </a>
+    <a href="index.html">
+      <div style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
+    </a>
+
+  </nav>
+  <div class="hero">
+    <!-- Contain hero image -->
+    <h2 class="m_hide"> There's No Laundromat Quite
       <br /> <a class="m_hide">Like R7 Laundry </h2></a>
-      <!-- end hero -->
-    </div>
-    <div id="container">
+    <!-- end hero -->
+  </div>
+  <div id="container">
     <div class="w">
       <!-- White container -->
       <br />
@@ -42,10 +49,10 @@
         <h2> + Store Location </h2>
         <br />
         <div class="dropee" id="cStoreLoc">
-        <div class="g">
-          <p> 369 Cezar E Chavez Ave,<br />
-            Pontiac, MI, 48342</p>
-        </div>
+          <div class="g">
+            <p> 369 Cezar E Chavez Ave,
+              <br /> Pontiac, MI, 48342</p>
+          </div>
         </div>
 
       </div>
@@ -54,35 +61,36 @@
         <h2> + Store Hours </h2>
         <br />
         <div class="dropee" id="cStoreHrs">
-        <div class="g">
-          <p> 7:30 Am - 10:00 Pm<br />
-          Lastload 8:30<br />
-        </p>
-          <div class="sd">
-            <div>
-              <h2>x</h2>
-            </div>
-            <p>
-            <strong>R7Laundry will be closed on</strong><br>
-            Christmas Day; Dec 25 </p>
-          </div>
-          <div class="sds">
-            <div>
-              <h2>x</h2>
-            </div>
-            <p>
-            <strong>R7Laundry will be closed on</strong><br>
-            New Year's Day; Jan 1 </p>
-          </div>
-          <div class="sd">
-            <div>
-              <h2>x</h2>
-            </div>
+          <div class="g">
+            <p> 7:30 Am - 10:00 Pm
+              <br /> Lastload 8:30
+              <br />
+            </p>
+            <div class="sd">
+              <div>
+                <h2>x</h2>
+              </div>
               <p>
-              <strong>R7Laundry will be closed on</strong><br>
-              Christmas; Dec 25 </p>
+                <strong>R7Laundry will be closed on</strong>
+                <br> Christmas Day; Dec 25 </p>
+            </div>
+            <div class="sds">
+              <div>
+                <h2>x</h2>
+              </div>
+              <p>
+                <strong>R7Laundry will be closed on</strong>
+                <br> New Year's Day; Jan 1 </p>
+            </div>
+            <div class="sd">
+              <div>
+                <h2>x</h2>
+              </div>
+              <p>
+                <strong>R7Laundry will be closed on</strong>
+                <br> Christmas; Dec 25 </p>
+            </div>
           </div>
-        </div>
         </div>
 
       </div>
@@ -91,12 +99,16 @@
         <h2> + How to Find us </h2>
         <br />
         <div class="dropee" id="cFind">
-        <div class="g">
-          <p>R7 Laundry is conviently located at:</p>
-            <p>369 Cezar E Chavez Ave,<br />Pontiac, MI, 48342</p> <br />
-          <div class="fifty square" id="todo"><p>Things to do.</p></div>
-          <div class="fifty square" id="map"><p>Get directions.</p></div>
-        </div>
+          <div class="g">
+            <p>R7 Laundry is conviently located at:</p>
+            <p>369 Cezar E Chavez Ave,
+              <br />Pontiac, MI, 48342</p>
+            <br />
+            <div class="fifty" id="todo"></div>
+            <a href="1">
+              <div class="fifty" id="map" alt="Get Directions"></div>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -107,27 +119,27 @@
       <br>
       <br>
       <h2 class="smargin">What Our Location Offers.</h2>
-      <a href="#">
+      <a href="./offer.html#cctv">
         <div class="fifty">
           <h3>CCTV</h3>
           <img style="width: 75%; margin: 0 auto; display: block;" alt="50 inch tv icon" src="img/icon/icon_tv.svg" />
         </div>
       </a>
-      <a href="#">
+      <a href="./offer.html#parking">
         <div class="fifty">
           <h3>Large Parkinglot</h3>
           <img style="width: 75%; margin: 0 auto; display: block;" alt="Free wifi icon" src="img/icon/icon_wifi.svg" />
           <br />
         </div>
       </a>
-      <a href="#">
+      <a href="./offer.html#kids">
         <div class="fifty">
           <h3>Kids Corner</h3>
-          <img style="width: 75%; margin: 0 auto;  display: block;" alt=" Coin-op icon" src="img/icon/icon_coin.svg" />
+          <img style="width: 75%; margin: 0 auto;  display: block;" alt="Kids corner" src="img/icon/icon_bear.svg" />
           <br />
         </div>
       </a>
-      <a href="#">
+      <a href="./offer.html#soap">
         <div class="fifty">
           <h3>Soap</h3>
           <img style="width: 75%; margin: 0 auto;  display: block;" alt="kids corner icon" src="img/icon/icon_bear.svg" />
