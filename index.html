@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>R7 Laundry - About us.</title>
   <link rel="stylesheet" href="styles/main.css" type="text/css"></link>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'></link>
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"></meta>
@@ -12,20 +12,63 @@
 </head>
 
 <body>
-  <script src="script/greeting.js"> </script>
+  <script src="script/greeting.js"></script>
   <nav>
-    <a href="location.html">
-      <div style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
+    <script>
+      $(document).ready(function() {
+        $('#hmen').click(function() {
+          $('.menu').slideDown(200);
+        });
+        $('.menu p').click(function() {
+          $('.menu').slideUp(200);
+        });
+      })
+
+    </script>
+    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
+    <a href="index.html">
+      <div id="mlogo" style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
     </a>
-    <a href="index.htmlgi">
-      <div style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
-    </a>
+    <div class="menu">
+      <p>X</p>
+      <ul>
+        <a href="index.html">
+          <li class="lvl1" id="menactive">
+            About us.
+          </li>
+        </a>
+        <a href="machines.html">
+          <li>
+            Our Machines.
+          </li>
+        </a>
+        <a href="dropoffs.html">
+          <li>
+            Drop off service.
+          </li>
+        </a>
+        <a href="offer.html">
+          <li>
+            What We Offer.
+          </li>
+        </a>
+        <a href="location.html">
+          <li>
+            How to Find us.
+          </li>
+          <a href="specials.html">
+            <li>
+              Specials.
+            </li>
+          </a>
+      </ul>
+    </div>
   </nav>
   <div class="hero">
     <!-- Contain hero image -->
     <h2 class="m_hide"> There's No Laundromat Quite
       <br /> <a class="m_hide">Like R7 Laundry </h2> </a>
-      <!-- end hero -->
+    <!-- end hero -->
   </div>
   <div id="container">
     <div class="w">

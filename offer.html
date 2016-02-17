@@ -13,13 +13,55 @@
 
 <body>
   <nav>
-    <a href="#">
-      <div style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
-    </a>
-    <a href="index.html">
-      <div style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
-    </a>
+    <script>
+      $(document).ready(function() {
+        $('#hmen').click(function() {
+          $('.menu').slideDown(200);
+        });
+        $('.menu p').click(function() {
+          $('.menu').slideUp(200);
+        });
+      })
 
+    </script>
+    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
+    <a href="index.html">
+      <div id="mlogo" style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
+    </a>
+    <div class="menu">
+      <p>X</p>
+      <ul>
+        <a href="index.html">
+          <li class="lvl1">
+            About us.
+          </li>
+        </a>
+        <a href="machines.html">
+          <li>
+            Our Machines.
+          </li>
+        </a>
+        <a href="dropoffs.html">
+          <li>
+            Drop off service.
+          </li>
+        </a>
+        <a href="offer.html" id="menactive">
+          <li>
+            What We Offer.
+          </li>
+        </a>
+        <a href="location.html">
+          <li>
+            How to Find us.
+          </li>
+          <a href="specials.html">
+            <li>
+              Specials.
+            </li>
+          </a>
+      </ul>
+    </div>
   </nav>
   <div class="hero">
     <!-- Contain hero image -->
