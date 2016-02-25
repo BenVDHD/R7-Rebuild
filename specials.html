@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css' />
+  <script type="text/javascript" src="script/jquery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"></meta>
+  <!-- <meta name="viewport" content="user-scalable = yes"> -->
+</head>
+
+<body>
+  <nav>
+    <script>
+      $(document).ready(function() {
+        $('#hmen').click(function() {
+          $('.menu').slideDown(200);
+        });
+        $('.menu p').click(function() {
+          $('.menu').slideUp(200);
+        });
+      })
+
+    </script>
+    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
+    <a href="index.html">
+      <div id="mlogo" style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
+    </a>
+    <div class="menu">
+      <p>X</p>
+      <ul>
+        <a href="index.html">
+          <li class="lvl1">
+            About us.
+          </li>
+        </a>
+        <a href="machines.html">
+          <li>
+            Our Machines.
+          </li>
+        </a>
+        <a href="dropoffs.html">
+          <li>
+            Drop off service.
+          </li>
+        </a>
+        <a href="offer.html">
+          <li>
+            What We Offer.
+          </li>
+        </a>
+        <a href="location.html">
+          <li>
+            How to Find us.
+          </li>
+          <a href="specials.html">
+            <li id="menactive">
+              Specials.
+            </li>
+          </a>
+      </ul>
+    </div>
+  </nav>
+  <div class="hero">
+    <!-- Contain hero image -->
+    <h2 class="m_hide"> There's No Laundromat Quite
+      <br /> <a class="m_hide">Like R7 Laundry </h2></a>
+    <!-- end hero -->
+  </div>
+  <div class="container">
+
+    <div class="offercube">
+
+      <br />
+      <h3>Coupons.</h3>
+      <img src="img/icon/icon_coupon.svg"></img>
+      <p>
+        R7 Laundry offers many coupons. Follow us on our social media to get printable coupons, updates, and laundry tips and tricks.
+      </p>
+    </div>
+    <div id="dsicon">
+      <a href="https://www.facebook.com/R7Laundry/"><img class="xxsicon" src="img/icon/icon_fb.svg" alt="FB"></img></a>
+      <a href="https://twitter.com/r7laundry"><img class="xxsicon" src="img/icon/icon_tw.svg" alt="TW"></img></a>
+      <a href="https://plus.google.com/+R7laundry/"><img class="xxsicon" src="img/icon/icon_gp.svg" alt="G+"></img></a>
+    </div>
+    <div class="offercube">
+      <br />
+      <hr />
+    </div>
+    <div class="offercube g">
+      <br />
+      <h3>Monthly Drawing.</h3>
+      <img src="img/icon/icon_drawing.svg"></img>
+      <p>R7 Laundry holds a drawing on the seventh of every month enter to win a Laundry Survival Pack.<a id="LSPtogg">Learn More ></a></p>
+
+      <script>
+        $(document).ready(function() {
+          $('#LSPtogg').click(function() {
+            $('#LSP').slideToggle(300);
+          });
+        })
+
+      </script>
+
+      <div id="LSP" class="offercube w">
+        <h3>The Laundry Survival Pack.</h3>
+        <img src="img/icon/icon_LSP.svg"></img>
+        <p>
+          The Laundry Survival Pack includes the following:
+        </p>
+        <ul style="padding: 0;">
+          <li>
+            1 Bottle of soap
+          </li>
+          <li>
+            1 bottle of softner
+          </li>
+          <li>
+            1 box of color-safe bleach
+          </li>
+          <li>
+            1 Candy of choice
+          </li>
+          <li>
+            2 Bags of chips
+          </li>
+        </ul>
+        <p style="color: #ff8080;">
+          // To enter ask for a raffle ticket at the front desk. //
+        </p>
+      </div>
+      <br />
+      <hr />
+    </div>
+
+    <div class="offercube">
+      <br />
+      <h3>Free Soap.</h3>
+      <img src="img/icon/icon_soap.svg"></img>
+    </div>
+    <p>R7 Laundry offers free soap EVERY wednesday. Come on in and ask the attendant for your free scoop of detergent.</p>
+    <div id="dsicon">
+    </div>
+    <br />
+  </div>
+</body>
+
+</html>

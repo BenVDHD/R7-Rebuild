@@ -52,6 +52,16 @@ li {
 h2.smargin {
   margin-bottom: 0;
 }
+#LSP{
+  display: none;
+  border-top: solid 1px #3d3d3d;
+  border-bottom: solid 1px #3d3d3d;
+}
+#LSPtogg{
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
 #todo {
   background-image: url('../img/gen/city.jpg');
   background-position: center;
@@ -94,6 +104,11 @@ h2.smargin {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.25);
 }
+/*.container{
+  width: 900px;
+  height: auto;
+  background: RED;
+}*/
 .menu li:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -156,6 +171,13 @@ h2.smargin {
   margin: .5%;
   position: relative;
   left: 25%;
+}
+.xxsicon{
+  width: 10%;
+  height: 10vw;
+  margin: .3%;
+  position: relative;
+  left: 32%;
 }
 .offercube img {
   margin-top: 24px;
