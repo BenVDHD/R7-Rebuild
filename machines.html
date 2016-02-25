@@ -76,15 +76,47 @@
     <h3>Wascomat Giant</h3>
     <img class="mimg"></img>
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
-    sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit sed
-    dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
+  <p>The Wascomat giant is our largest most efficient washer. This washer is perfect for anyone looking to wash a lot of clothes, towels or comforters.</p>
   <div id="dsicon">
-    <img class="xsicon" src="" alt="Wash Time: ~30min"></img>
-    <img class="xsicon" src="" alt=""></img>
-    <img class="xsicon" src="" alt=""></img>
+    <img id="wtGianttogg" class="xsicon" src="img/icon/icon_30min.svg" alt="Wash Time: ~30min"></img>
+    <img id="sGianttogg" class="xsicon" src="img/icon/" alt="Recommended amount of soap: 4 scoops"></img>
+    <img id="wGianttogg" class="xsicon" src="img/icon/icon_70lbs.svg" alt="max weight: 70lbs"></img>
   </div>
+
+<script>
+
+
+  $(document).ready(function(){
+      $('#wtGianttogg').click(function(){
+        $('#wtGiant').slideToggle(300);
+      });
+      $('#sGianttogg').click(function(){
+        $('#sGiant').slideToggle(300);
+      });
+      $('#wGianttogg').click(function(){
+        $('#wGiant').slideToggle(300);
+      })
+  })
+
+</script>
+
+
   <div class="offercube">
+    <div id="wtGiant" class="hide">
+      <p style="color: #ff8080;">
+        // This washers wash cycle is around 30 minutes please plan accordingly //
+      </p>
+    </div>
+    <div id="sGiant" class="hide">
+      <p style="color: #ff8080;">
+        // R7 Laundry recommends using 4 scoops of soap, --ml of softener, and --ml of bleach if applicable //
+      </p>
+    </div>
+    <div id="wGiant" class="hide">
+      <p style="color: #ff8080;">
+        // This washer can handle a max of 70 lbs. DO NOT overload as it is equipped with a safety mechanism that will turn the machine off //
+      </p>
+    </div>
     <br />
     <hr />
   </div>
