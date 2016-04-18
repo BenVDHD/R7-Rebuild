@@ -1,191 +1,134 @@
-<!DOCTYPE html>
+
+<!--output:  $1.html-->
+<!--**header.jade**--><!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-
-    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico" />
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="styles/main.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <meta name="viewport" content="user-scalable = yes">-->
+    <script type="text/javascript" src="script/jquery.js"></script>
     <title>Our Machines - R7 Laundry</title>
-    <meta name=-"keywords" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean" />
-    <meta name="title" content="Our Machines | Fully Coin operated laundry | R7 Laundry" />
-    <meta name="description" content="R7 Laundry offers top of the line washing equipment along with soap softener and bleach for its customers. In a safe clean environment."  />
-
-
-  <link rel="stylesheet" href="styles/main.css" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css' />
-  <script type="text/javascript" src="script/jquery.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"></meta>
-  <!-- <meta name="viewport" content="user-scalable = yes"> -->
-</head>
-
+    <meta name="-&quot;keywords&quot;" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean">
+    <meta name="title" content="Our Machines | Fully Coin operated laundry | R7 Laundry">
+    <meta name="description" content="R7 Laundry offers top of the line washing equipment along with soap softener and bleach for its customers. In a safe clean environment.">
+  </head>
+</html>
+<!--**/header.jade**-->
 <body>
+  <!--output: $1.html-->
+  <!--**menu.jade**-->
   <nav>
     <script>
       $(document).ready(function() {
-        $('#hmen').click(function() {
-          $('.menu').slideDown(200);
-        });
-        $('.menu p').click(function() {
-          $('.menu').slideUp(200);
-        });
+      $('#hmen').click(function() {
+      $('.hmenu').slideDown(200);
+      });
+      $('.hmenu p').click(function() {
+      $('.hmenu').slideUp(200);
+      });
       })
-
     </script>
-    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
-    <a href="index.html">
-      <div id="mlogo" style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
-    </a>
-    <div class="menu">
-      <p>X</p>
+    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;" class="d_hide"></div>
+    <div id="mlogo"></div>
+    <div class="m_hide menu">
       <ul>
-        <a href="index.html">
-          <li class="lvl1">
-            About us.
-          </li>
-        </a>
-        <a href="machines.html">
-          <li id="menactive">
-            Our Machines.
-          </li>
-        </a>
-        <a href="dropoffs.html">
-          <li>
-            Drop off service.
-          </li>
-        </a>
-        <a href="offer.html">
-          <li>
-            What We Offer.
-          </li>
-        </a>
-        <a href="location.html">
-          <li>
-            How to Find us.
-          </li>
-          <a href="specials.html">
-            <li>
-              Specials.
-            </li>
-          </a>
+        <li id="menactive"><a href="index.html">
+            <div id="dactive">•</div>About us.</a></li>
+        <li><a href="machines.html">Our Machines.</a></li>
+        <li><a href="dropoffs.html"> Drop off service.</a></li>
+        <li><a href="offer.html">What We Offer.</a></li>
+        <li><a href="location.html">How to Find us.</a></li>
+        <li><a href="specials.html">Specials.</a></li>
       </ul>
     </div>
+    <div class="hmenu">
+      <p>X</p>
+      <ul><a href="index.html">
+          <li id="menactive" class="lvl1">About us.</li></a><a href="machines.html">
+          <li>Our Machines.</li></a><a href="dropoffs.html">
+          <li>Drop off service.</li></a><a href="offer.html">
+          <li>What We Offer.</li></a><a href="location.html">
+          <li>How to Find us.</li><a href="specials.html">
+            <li>Specials.</li></a></a></ul>
+    </div>
   </nav>
+  <!--**/menu.jade**-->
+  <!--output: $1.html-->
+  <!--**hero.jade**-->
   <div class="hero">
-    <!-- Contain hero image -->
-    <h1 class="m_hide"> There's No Laundromat Quite
-      <br /> <a class="m_hide">Like R7 Laundry </h1></a>
-    <!-- end hero -->
+    <!-- Contain hero image-->
+    <h1 class="m_hide">There's No Laundromat Quite<br><a class="m_hide">Like R7 Laundry</a></h1>
+    <!-- end hero-->
   </div>
-
-  <div class="offercube">
-    <a name="giant"></a>
-    <br />
-    <h3>Wascomat Giant</h3>
-    <img class="mimg"></img>
+  <div class="offercube"><a name="giant"></a><br>
+    <h3>Wascomat Giant</h3><img class="mimg">
   </div>
-  <p>The Wascomat giant is our largest most efficient washer. This washer is perfect for anyone looking to wash a lot of clothes, towels or comforters.</p>
-  <div id="dsicon">
-    <img id="wtGianttogg" class="xsicon" src="img/icon/icon_30min.svg" alt="Wash Time: ~30min"></img>
-    <img id="sGianttogg" class="xsicon" src="img/icon/" alt="Recommended amount of soap: 4 scoops"></img>
-    <img id="wGianttogg" class="xsicon" src="img/icon/icon_70lbs.svg" alt="max weight: 70lbs"></img>
-  </div>
-
-<script>
-
-
-  $(document).ready(function(){
-      $('#wtGianttogg').click(function(){
-        $('#wtGiant').slideToggle(300);
-      });
-      $('#sGianttogg').click(function(){
-        $('#sGiant').slideToggle(300);
-      });
-      $('#wGianttogg').click(function(){
-        $('#wGiant').slideToggle(300);
-      })
-  })
-
-</script>
-
-
+  <p>
+    <The>Wascomat giant is our largest most efficient washer. This washer is perfect for anyone looking to wash a lot of clothes, towels or comforters.</The>
+  </p>
+  <div id="dsicon"><img id="wtGianttogg" src="img/icon/icon_30min.svg" alt="Wash Time: ~30min" class="xsicon"><img id="sGianttogg" src="img/icon/" alt="Recommended amount of soap: 4 scoops" class="xsicon"><img id="wGianttogg" src="img/icon/icon_70lbs.svg" alt="max weight: 70lbs" class="xsicon"></div>
+  <script>
+    $(document).ready(function(){
+    $('#wtGianttogg').click(function(){
+    $('#wtGiant').slideToggle(300);
+    });
+    $('#sGianttogg').click(function(){
+    $('#sGiant').slideToggle(300);
+    });
+    $('#wGianttogg').click(function(){
+    $('#wGiant').slideToggle(300);
+    })
+    })
+  </script>
   <div class="offercube">
     <div id="wtGiant" class="hide">
-      <p style="color: #ff8080;">
-        // This washers wash cycle is around 30 minutes please plan accordingly //
-      </p>
+      <p style="color: #ff8080;">// This washers wash cycle is around 30 minutes please plan accordingly //</p>
     </div>
     <div id="sGiant" class="hide">
-      <p style="color: #ff8080;">
-        // R7 Laundry recommends using 4 scoops of soap, --ml of softener, and --ml of bleach if applicable //
-      </p>
+      <p style="color: #ff8080;">// R7 Laundry recommends using 4 scoops of soap, --ml of softener, and --ml of bleach if applicable //</p>
     </div>
     <div id="wGiant" class="hide">
-      <p style="color: #ff8080;">
-        // This washer can handle a max of 70 lbs. DO NOT overload as it is equipped with a safety mechanism that will turn the machine off //
-      </p>
-    </div>
-    <br />
-    <hr />
+      <p style="color: #ff8080;">// This washer can handle a max of 70 lbs. DO NOT overload as it is equipped with a safety mechanism that will turn the machine off //</p>
+    </div><br>
+    <hr>
   </div>
-
-  <div class="offercube g">
-    <a name=""></a>
-    <br />
-    <h3>Name</h3>
-    <img class="mimg"></img>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+  <div class="offercube g"><a name=""></a><br>
+    <h3>Name</h3><img class="mimg">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
   </div>
-  <div id="dsicon" class="g">
-    <img class="xsicon" src="" alt="Wash Time: "></img>
-    <img class="xsicon" src="" alt=""></img>
-    <img class="xsicon" src="" alt=""></img>
+  <div id="dsicon" class="g"><img src="" alt="Wash Time: " class="xsicon"><img src="" alt="" class="xsicon"><img src="" alt="" class="xsicon"></div>
+  <div class="offercube g"><br><a name=""></a>
+    <hr>
   </div>
-  <div class="offercube g">
-    <br />
-    <a name=""></a>
-    <hr />
-  </div>
-  <div class="offercube">
-    <a name=""></a>
-    <br />
-    <h3>Name</h3>
-    <img class="mimg"></img>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+  <div class="offercube"><a name=""></a><br>
+    <h3>Name</h3><img class="mimg">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
   </div>
-  <div id="dsicon">
-    <img class="xsicon" src="" alt="Wash Time: "></img>
-    <img class="xsicon" src="" alt=""></img>
-    <img class="xsicon" src="" alt=""></img>
+  <div id="dsicon"><img src="" alt="Wash Time: " class="xsicon"><img src="" alt="" class="xsicon"><img src="" alt="" class="xsicon"></div>
+  <div class="offercube"><br><a name=""></a>
+    <hr>
   </div>
-  <div class="offercube">
-    <br />
-    <a name=""></a>
-    <hr />
-  </div>
-  <div class="offercube g">
-    <a name=""></a>
-    <br />
-    <h3>Name</h3>
-    <img class="mimg"></img>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+  <div class="offercube g"><a name=""></a><br>
+    <h3>Name</h3><img class="mimg">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
   </div>
-  <div id="dsicon" class="g">
-    <img class="xsicon" src="" alt="Wash Time: "></img>
-    <img class="xsicon" src="" alt=""></img>
-    <img class="xsicon" src="" alt=""></img>
+  <div id="dsicon" class="g"><img src="" alt="Wash Time: " class="xsicon"><img src="" alt="" class="xsicon"><img src="" alt="" class="xsicon"></div>
+  <div class="offercube g"><br><a name=""></a>
+    <hr>
   </div>
-  <div class="offercube g">
-    <br />
-    <a name=""></a>
-    <hr />
-  </div>
-
 </body>
-
-</html>

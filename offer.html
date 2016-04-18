@@ -1,167 +1,138 @@
-<!DOCTYPE html>
+
+<!--output:  $1.html-->
+<!--**header.jade**--><!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-
-        <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico" />
-        <title>Offers - R7 Laundry</title>
-        <meta name=-"keywords" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean, offers, specials" />
-        <meta name="title" content="Offers | What we offer at R7 Laundry | R7 Laundry" />
-        <meta name="description" content="R7 Laundry has many amenities for your convenience. R7 Laundry offers a wide variety of refreshments including a Pepsi vending machine, snacks, and many more."  />
-
-  <link rel="stylesheet" href="styles/main.css" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css' />
-  <script type="text/javascript" src="script/jquery.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"></meta>
-  <!-- <meta name="viewport" content="user-scalable = yes"> -->
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="styles/main.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <meta name="viewport" content="user-scalable = yes">-->
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <title>Offers - R7 Laundry</title>
+    <meta name="-&quot;keywords&quot;" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean, offers, specials">
+    <meta name="title" content="Offers | What we offer at R7 Laundry | R7 Laundry">
+    <meta name="description" content="R7 Laundry has many amenities for your convenience. R7 Laundry offers a wide variety of refreshments including a Pepsi vending machine, snacks, and many more.">
+  </head>
+</html>
+<!--**/header.jade**-->
 <body>
+  <!--output: $1.html-->
+  <!--**menu.jade**-->
   <nav>
     <script>
       $(document).ready(function() {
-        $('#hmen').click(function() {
-          $('.menu').slideDown(200);
-        });
-        $('.menu p').click(function() {
-          $('.menu').slideUp(200);
-        });
+      $('#hmen').click(function() {
+      $('.hmenu').slideDown(200);
+      });
+      $('.hmenu p').click(function() {
+      $('.hmenu').slideUp(200);
+      });
       })
-
     </script>
-    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
-    <a href="index.html">
-      <div id="mlogo" style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
-    </a>
-    <div class="menu">
-      <p>X</p>
+    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;" class="d_hide"></div>
+    <div id="mlogo"></div>
+    <div class="m_hide menu">
       <ul>
-        <a href="index.html">
-          <li class="lvl1">
-            About us.
-          </li>
-        </a>
-        <a href="machines.html">
-          <li>
-            Our Machines.
-          </li>
-        </a>
-        <a href="dropoffs.html">
-          <li>
-            Drop off service.
-          </li>
-        </a>
-        <a href="offer.html">
-          <li id="menactive">
-            What We Offer.
-          </li>
-        </a>
-        <a href="location.html">
-          <li>
-            How to Find us.
-          </li>
-          <a href="specials.html">
-            <li>
-              Specials.
-            </li>
-          </a>
+        <li id="menactive"><a href="index.html">
+            <div id="dactive">•</div>About us.</a></li>
+        <li><a href="machines.html">Our Machines.</a></li>
+        <li><a href="dropoffs.html"> Drop off service.</a></li>
+        <li><a href="offer.html">What We Offer.</a></li>
+        <li><a href="location.html">How to Find us.</a></li>
+        <li><a href="specials.html">Specials.</a></li>
       </ul>
     </div>
+    <div class="hmenu">
+      <p>X</p>
+      <ul><a href="index.html">
+          <li id="menactive" class="lvl1">About us.</li></a><a href="machines.html">
+          <li>Our Machines.</li></a><a href="dropoffs.html">
+          <li>Drop off service.</li></a><a href="offer.html">
+          <li>What We Offer.</li></a><a href="location.html">
+          <li>How to Find us.</li><a href="specials.html">
+            <li>Specials.</li></a></a></ul>
+    </div>
   </nav>
+  <!--**/menu.jade**-->
+  <!--output: $1.html-->
+  <!--**hero.jade**-->
   <div class="hero">
-    <!-- Contain hero image -->
-    <h2 class="m_hide"> There's No Laundromat Quite
-      <br /> <a class="m_hide">Like R7 Laundry </h2></a>
-    <!-- end hero -->
-  </div>
-
-  <a name="tv"></a>
-  <div class="offercube">
-    <img src="img/icon/icon_tv.svg" alt='50" Televisions'></img>
+    <!-- Contain hero image-->
+    <h1 class="m_hide">There's No Laundromat Quite<br><a class="m_hide">Like R7 Laundry</a></h1>
+    <!-- end hero-->
+  </div><a name="tv"></a>
+  <div class="offercube"><img src="img/icon/icon_tv.svg" alt="50&quot; Televisions">
     <h3>50" Televisions</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
-    <hr />
-    <a name="wifi">
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
+    <hr><a name="wifi"></a>
   </div>
-  </a>
-
-
-  <div class="offercube g">
-    <img src="img/icon/icon_wifi.svg" alt="Free wifi"></img>
+  <div class="offercube g"><img src="img/icon/icon_wifi.svg" alt="Free wifi">
     <h3>Free Wifi</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
-    <hr />
-    <a name="coin">
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
+    <hr><a name="coin"></a>
   </div>
-  </a>
-
-  <div class="offercube">
-    <img src="img/icon/icon_coin.svg" alt="Coin operated"></img>
+  <div class="offercube"><img src="img/icon/icon_coin.svg" alt="Coin operated">
     <h3>Fully Coin-Op</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
-    <hr />
-    <a name="kids">
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
+    <hr><a name="kids"></a>
   </div>
-  </a>
-
-
-  <div class="offercube g">
-    <img src="img/icon/icon_bear.svg" alt="kids toy"></img>
+  <div class="offercube g"><img src="img/icon/icon_bear.svg" alt="kids toy">
     <h3>Kids Corner</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
-    <hr />
-    <a name="cctv">
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
+    <hr><a name="cctv"></a>
   </div>
-  </a>
-
-  <div class="offercube">
-    <img src="img/icon/icon_cctv.svg" alt="Closed Circuit TV"></img>
+  <div class="offercube"><img src="img/icon/icon_cctv.svg" alt="Closed Circuit TV">
     <h3>CCTV</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
-      <a name="parking"></a>
-    <hr />
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p><a name="parking"></a>
+    <hr>
   </div>
-
-  <div class="offercube g">
-    <img src="img/icon/icon_parking.svg" alt="Large Parking Lot"></img>
+  <div class="offercube g"><img src="img/icon/icon_parking.svg" alt="Large Parking Lot">
     <h3>Large Prakinglot</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
-    <hr />
-    <a name="soap"></a>
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
+    <hr><a name="soap"></a>
   </div>
-
-  <div class="offercube">
-    <img src="img/icon/icon_soap.svg" alt="Soap"></img>
+  <div class="offercube"><img src="img/icon/icon_soap.svg" alt="Soap">
     <h3>Soap</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
-    <hr />
-    <a name="snack"></a>
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
+    <hr><a name="snack"></a>
   </div>
-
-  <div class="offercube g">
-    <img src="img/icon/icon_snack.svg" alt="Soap"></img>
+  <div class="offercube g"><img src="img/icon/icon_snack.svg" alt="Soap">
     <h3>Refreshments</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
       sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
-      sed dolor id lobortis. In ut faucibus libero, a egestas justo.</p>
-    <hr />
-    <a name=""></a>
+      sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    </p>
+    <hr><a name=""></a>
   </div>
 </body>
-
-</html>

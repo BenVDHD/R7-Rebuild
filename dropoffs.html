@@ -1,111 +1,86 @@
-<!DOCTYPE html>
+
+<!--output:  $1.html-->
+<!--**header.jade**--><!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-
-  <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico" />
-  <title>Drop-off service - R7 Laundry</title>
-  <meta name=-"keywords" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean" />
-  <meta name="title" content="Wash-Dry-Fold | Pontiac MI | R7 Laundry" />
-  <meta name="description" content="R7 Laundry takes great pride in providing a top of the line drop-off or Wash-Dry-Fold service. Our Laundry Specialists will meticulously wash dry and fold your clothes."  />
-
-  <link rel="stylesheet" href="styles/main.css" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css' />
-  <script type="text/javascript" src="script/jquery.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"></meta>
-  <!-- <meta name="viewport" content="user-scalable = yes"> -->
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="styles/main.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <meta name="viewport" content="user-scalable = yes">-->
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <title>Drop-off service - R7 Laundry</title>
+    <meta name="-&quot;keywords&quot;" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean">
+    <meta name="title" content="Wash-Dry-Fold | Pontiac MI | R7 Laundry">
+    <meta name="description" content="R7 Laundry takes great pride in providing a top of the line drop-off or Wash-Dry-Fold service. Our Laundry Specialists will meticulously wash dry and fold your clothes.">
+  </head>
+</html>
+<!--**/header.jade**-->
 <body>
+  <!--output: $1.html-->
+  <!--**menu.jade**-->
   <nav>
     <script>
       $(document).ready(function() {
-        $('#hmen').click(function() {
-          $('.menu').slideDown(200);
-        });
-        $('.menu p').click(function() {
-          $('.menu').slideUp(200);
-        });
+      $('#hmen').click(function() {
+      $('.hmenu').slideDown(200);
+      });
+      $('.hmenu p').click(function() {
+      $('.hmenu').slideUp(200);
+      });
       })
-
     </script>
-    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
-    <a href="index.html">
-      <div id="mlogo" style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
-    </a>
-    <div class="menu">
-      <p>X</p>
+    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;" class="d_hide"></div>
+    <div id="mlogo"></div>
+    <div class="m_hide menu">
       <ul>
-        <a href="index.html">
-          <li class="lvl1">
-            About us.
-          </li>
-        </a>
-        <a href="machines.html">
-          <li>
-            Our Machines.
-          </li>
-        </a>
-        <a href="dropoffs.html">
-          <li id="menactive">
-            Drop off service.
-          </li>
-        </a>
-        <a href="offer.html">
-          <li>
-            What We Offer.
-          </li>
-        </a>
-        <a href="location.html">
-          <li>
-            How to Find us.
-          </li>
-          <a href="specials.html">
-            <li>
-              Specials.
-            </li>
-          </a>
+        <li id="menactive"><a href="index.html">
+            <div id="dactive">•</div>About us.</a></li>
+        <li><a href="machines.html">Our Machines.</a></li>
+        <li><a href="dropoffs.html"> Drop off service.</a></li>
+        <li><a href="offer.html">What We Offer.</a></li>
+        <li><a href="location.html">How to Find us.</a></li>
+        <li><a href="specials.html">Specials.</a></li>
       </ul>
     </div>
+    <div class="hmenu">
+      <p>X</p>
+      <ul><a href="index.html">
+          <li id="menactive" class="lvl1">About us.</li></a><a href="machines.html">
+          <li>Our Machines.</li></a><a href="dropoffs.html">
+          <li>Drop off service.</li></a><a href="offer.html">
+          <li>What We Offer.</li></a><a href="location.html">
+          <li>How to Find us.</li><a href="specials.html">
+            <li>Specials.</li></a></a></ul>
+    </div>
   </nav>
+  <!--**/menu.jade**-->
+  <!--output: $1.html-->
+  <!--**hero.jade**-->
   <div class="hero">
-    <!-- Contain hero image -->
-    <h2 class="m_hide"> There's No Laundromat Quite
-      <br /> <a class="m_hide">Like R7 Laundry </h2></a>
-    <!-- end hero -->
+    <!-- Contain hero image-->
+    <h1 class="m_hide">There's No Laundromat Quite<br><a class="m_hide">Like R7 Laundry pi</a></h1>
+    <!-- end hero-->
   </div>
   <div class="container">
-
-    <div class="offercube">
-
-      <br />
-      <h3>Wash.</h3>
-      <img src="img/icon/icon_washer.svg"></img>
-      <p>R7 Laundry takes great pride in providing a top of the line dropoff or Wash-Dry-Fold service. Our Laundry Specialists start by separating the clothes by color and sensitivity as to prevent shrinkage and color bleeding. After the clothes are separated
-        they are placed into a washer based on the amount of clothes to help conserve water. The washers are then set to the settings recommended on the tags. The clothes are then washed with soap, softner, and bleach if applicable.
-        <br />
-        <hr />
+    <div class="offercube"><br>
+      <h3>Wash.</h3><img src="img/icon/icon_washer.svg">
+      <p>
+        R7 Laundry takes great pride in providing a top of the line dropoff or Wash-Dry-Fold service. Our Laundry Specialists start by separating the clothes by color and sensitivity as to prevent shrinkage and color bleeding. After the clothes are separated
+        they are placed into a washer based on the amount of clothes to help conserve water. The washers are then set to the settings recommended on the tags. The clothes are then washed with soap, softner, and bleach if applicable.<br>
+        <hr>
+      </p>
     </div>
-    <div class="offercube g">
-      <br />
-      <h3>Dry</h3>
-      <img src="img/icon/icon_dry.svg"></img>
-      <p>After the wash cycle is complete our Laundry Specialist will dry the clothes at the right heat and time based on their sensitivity.</p>
-      <br />
-      <hr />
+    <div class="offercube g"><br>
+      <h3>Dry</h3><img src="img/icon/icon_dry.svg">
+      <p>After the wash cycle is complete our Laundry Specialist will dry the clothes at the right heat and time based on their sensitivity.</p><br>
+      <hr>
     </div>
-
-    <div class="offercube">
-      <br />
-      <h3>Fold</h3>
-      <img src="img/icon/icon_fold.svg"></img>
+    <div class="offercube"><br>
+      <h3>Fold</h3><img src="img/icon/icon_fold.svg">
     </div>
     <p>Once the clothes are completely dry they are folded and separated by type i.e. shirts, shorts, jeans, etc. once the clothes are folded they are neatly placed in bags to preserve their crips edges on the car ride home.</p>
-    <div id="dsicon">
-    </div>
-    <br />
+    <div id="dsicon"></div><br>
   </div>
 </body>
-
-</html>

@@ -1,221 +1,157 @@
-<!DOCTYPE html>
+
+<!--output:  $1.html-->
+<!--**header.jade**--><!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  
-  <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico" />
-  <title>Location - R7 Laundry </title>
-  <meta name=-"keywords" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean" />
-  <meta name="title" content="Location | How to find us | R7 Laundry" />
-  <meta name="description" content="R7 Laundry is conveniently located at 369 Cesar E Chavez Ave, Pontiac, MI 48342 right next to the Wisner Stadium and the Oakland County Pioneer Historical Society."  />
-
-  <link rel="stylesheet" href="styles/main.css" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css' />
-  <script type="text/javascript" src="script/jquery.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"></meta>
-  <!-- <meta name="viewport" content="user-scalable = yes"> -->
-  <script>
-    $(document).ready(function() {
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="styles/main.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <meta name="viewport" content="user-scalable = yes">-->
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <title>Location - R7 Laundry </title>
+    <meta name="-&quot;keywords&quot;" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean">
+    <meta name="title" content="Location | How to find us | R7 Laundry">
+    <meta name="description" content="R7 Laundry is conveniently located at 369 Cesar E Chavez Ave, Pontiac, MI 48342 right next to the Wisner Stadium and the Oakland County Pioneer Historical Society.">
+    <script>
+      $(document).ready(function() {
       $("#oStoreLoc").click(function() {
-        $("#cStoreLoc").slideToggle(300);
+      $("#cStoreLoc").slideToggle(300);
       });
       $("#oStoreHrs").click(function() {
-        $("#cStoreHrs").slideToggle(300);
+      $("#cStoreHrs").slideToggle(300);
       });
       $("#oFind").click(function() {
-        $("#cFind").slideToggle(300);
+      $("#cFind").slideToggle(300);
       });
-    });
-
-  </script>
-</head>
-
+      });
+    </script>
+  </head>
+  <!--**/header.jade**-->
+</html>
 <body>
+  <!--output: $1.html-->
+  <!--**menu.jade**-->
   <nav>
     <script>
       $(document).ready(function() {
-        $('#hmen').click(function() {
-          $('.menu').slideDown(200);
-        });
-        $('.menu p').click(function() {
-          $('.menu').slideUp(200);
-        });
+      $('#hmen').click(function() {
+      $('.hmenu').slideDown(200);
+      });
+      $('.hmenu p').click(function() {
+      $('.hmenu').slideUp(200);
+      });
       })
-
     </script>
-    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;"></div>
-    <a href="index.html">
-      <div id="mlogo" style=" margin: 0 auto; width: 12.5vh; height: 100%; background-image: url('img/icon/logo-gray.png'); background-size: contain;"></div>
-    </a>
-    <div class="menu">
-      <p>X</p>
+    <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;" class="d_hide"></div>
+    <div id="mlogo"></div>
+    <div class="m_hide menu">
       <ul>
-        <a href="index.html">
-          <li class="lvl1">
-            About us.
-          </li>
-        </a>
-        <a href="machines.html">
-          <li>
-            Our Machines.
-          </li>
-        </a>
-        <a href="dropoffs.html">
-          <li>
-            Drop off service.
-          </li>
-        </a>
-        <a href="offer.html">
-          <li>
-            What We Offer.
-          </li>
-        </a>
-        <a href="location.html">
-          <li id="menactive">
-            How to Find us.
-          </li>
-          <a href="specials.html">
-            <li>
-              Specials.
-            </li>
-          </a>
+        <li id="menactive"><a href="index.html">
+            <div id="dactive">•</div>About us.</a></li>
+        <li><a href="machines.html">Our Machines.</a></li>
+        <li><a href="dropoffs.html"> Drop off service.</a></li>
+        <li><a href="offer.html">What We Offer.</a></li>
+        <li><a href="location.html">How to Find us.</a></li>
+        <li><a href="specials.html">Specials.</a></li>
       </ul>
     </div>
+    <div class="hmenu">
+      <p>X</p>
+      <ul><a href="index.html">
+          <li id="menactive" class="lvl1">About us.</li></a><a href="machines.html">
+          <li>Our Machines.</li></a><a href="dropoffs.html">
+          <li>Drop off service.</li></a><a href="offer.html">
+          <li>What We Offer.</li></a><a href="location.html">
+          <li>How to Find us.</li><a href="specials.html">
+            <li>Specials.</li></a></a></ul>
+    </div>
   </nav>
-
+  <!--**/menu.jade**-->
+  <!--output: $1.html-->
+  <!--**hero.jade**-->
   <div class="hero">
-    <!-- Contain hero image -->
-    <h2 class="m_hide"> There's No Laundromat Quite
-      <br /> <a class="m_hide">Like R7 Laundry </h2></a>
-    <!-- end hero -->
+    <!-- Contain hero image-->
+    <h1 class="m_hide">There's No Laundromat Quite<br><a class="m_hide">Like R7 Laundry</a></h1>
+    <!-- end hero-->
   </div>
   <div id="container">
     <div class="w">
-      <!-- White container -->
-      <br />
+      <!-- White container--><br>
       <div id="oStoreLoc">
-        <h2> + Store Location </h2>
-        <br />
-        <div class="dropee" id="cStoreLoc">
+        <h2> + Store Location </h2><br>
+        <div id="cStoreLoc" class="dropee">
           <div class="g">
-            <p> 369 Cezar E Chavez Ave,
-              <br /> Pontiac, MI, 48342</p>
+            <p>369 Cezar E Chavez Ave,<br> Pontiac, MI, 48342</p>
           </div>
         </div>
-
-      </div>
-      <br />
+      </div><br>
       <div id="oStoreHrs">
-        <h2> + Store Hours </h2>
-        <br />
-        <div class="dropee" id="cStoreHrs">
+        <h2> + Store Hours </h2><br>
+        <div id="cStoreHrs" class="dropee">
           <div class="g">
-            <p> 7:30 Am - 10:00 Pm
-              <br /> Lastload 8:30
-              <br />
-            </p>
+            <p>7:30 Am - 10:00 Pm<br> Lastload 8:30<br></p>
             <div class="sd">
               <div>
                 <h2>x</h2>
               </div>
-              <p>
-                <strong>R7Laundry will be closed on</strong>
-                <br> Christmas Day; Dec 25 </p>
+              <p><strong>R7Laundry will be closed on</strong><br> Christmas Day; Dec 25</p>
             </div>
             <div class="sds">
               <div>
                 <h2>x</h2>
               </div>
-              <p>
-                <strong>R7Laundry will be closed on</strong>
-                <br> New Year's Day; Jan 1 </p>
+              <p><strong>R7Laundry will be closed on</strong><br> New Year's Day; Jan 1</p>
             </div>
             <div class="sd">
               <div>
                 <h2>x</h2>
               </div>
-              <p>
-                <strong>R7Laundry will be closed on</strong>
-                <br> Christmas; Dec 25 </p>
+              <p><strong>R7Laundry will be closed on</strong><br> Christmas; Dec 25</p>
             </div>
           </div>
         </div>
-
-      </div>
-      <br />
+      </div><br>
       <div id="oFind">
-        <h2> + How to Find us </h2>
-        <br />
-        <div class="dropee" id="cFind">
+        <h2> + How to Find us </h2><br>
+        <div id="cFind" class="dropee">
           <div class="g">
             <p>R7 Laundry is conviently located at:</p>
-            <p>369 Cezar E Chavez Ave,
-              <br />Pontiac, MI, 48342</p>
-            <br />
-            <a href="/todo.html">
-              <div class="fifty" id="todo"></div>
-            </a>
-            <a target="_blank" href="https://www.google.com/maps/dir//R7+Laundry,+369+Cesar+E+Chavez+Ave,+Pontiac,+MI+48342/@42.6016273,-83.4528073,11z/data=!4m12!1m3!3m2!1s0x0000000000000000:0x1beeb1d4ca15ad5e!2sR7+Laundry!4m7!1m0!1m5!1m1!1s0x8824be480d299667:0x1beeb1d4ca15ad5e!2m2!1d-83.3038811!2d42.6475694">
-              <div class="fifty" id="map" alt="Get Directions"></div>
-            </a>
-            <hr />
+            <p>369 Cezar E Chavez Ave,<br>Pontiac, MI, 48342</p><br><a href="/todo.html">
+              <div id="todo" class="fifty"></div></a><a target="_blank" href="https://www.google.com/maps/dir//R7+Laundry,+369+Cesar+E+Chavez+Ave,+Pontiac,+MI+48342/@42.6016273,-83.4528073,11z/data=!4m12!1m3!3m2!1s0x0000000000000000:0x1beeb1d4ca15ad5e!2sR7+Laundry!4m7!1m0!1m5!1m1!1s0x8824be480d299667:0x1beeb1d4ca15ad5e!2m2!1d-83.3038811!2d42.6475694">
+              <div id="map" alt="Get Directions" class="fifty"></div></a>
+            <hr>
           </div>
         </div>
-
       </div>
-
-      <div class="g">
-        <a href="tel:+12484818725"><div class="rbutton"><p>Store Phone:</br><em>(248) 481-8725</em></p></div></a>
-        <a href="mailto:manager@r7laundry.com"><div class="rbutton"><p>Email us:</br><em>manager@r7laundry.com</em></p></div></a>
-        <br />
-      </div>
-
-        <!-- End White container -->
-      </div>
-      <div class="offercube">
-        <br>
-        <br>
-        <h2 class="smargin">What Our Location Offers.</h2>
-        <br />
-        <a href="./offer.html#cctv">
-          <div class="fifty">
-            <h3>CCTV</h3>
-            <img style="width: 75%; margin: 0 auto; display: block;" alt="50 inch tv icon" src="img/icon/icon_cctv.svg" />
-          </div>
-        </a>
-        <a href="./offer.html#parking">
-          <div class="fifty">
-            <h3>Large Parking lot</h3>
-            <img style="width: 70%; margin: 0 auto; display: block;" alt="Free wifi icon" src="img/icon/icon_parking.svg" />
-            <br />
-          </div>
-        </a>
-        <a href="./offer.html#snack">
-          <div class="fifty">
-            <h3>Refreshments</h3>
-            <img style="width: 75%; margin: 0 auto;  display: block;" alt="Kids corner" src="img/icon/icon_snack.svg" />
-            <br />
-          </div>
-        </a>
-        <a href="./offer.html#soap">
-          <div class="fifty">
-            <h3>Soap</h3>
-            <img style="width: 75%; margin: 0 auto;  display: block;" alt="kids corner icon" src="img/icon/icon_soap.svg" />
-            <br />
-          </div>
-        </a>
-        <br />
-        <div>
-          <br />
-          <p> Tap to learn more! </p>
-        </div>
-        <br>
-        <br>
-        <!-- End White container -->
-      </div>
+      <div class="g"><a href="tel:+12484818725">
+          <div class="rbutton">
+            <p>Store Phone:<br><em>(248) 481-8725</em></p>
+          </div></a><a href="mailto:manager@r7laundry.com">
+          <div class="rbutton">
+            <p>Email us:<br><em>manager@r7laundry.com</em></p>
+          </div></a><br></div>
+      <!-- End White container-->
     </div>
-
+    <div class="offercube"><br><br>
+      <h2 class="smargin">What Our Location Offers.</h2><br><a href="./offer.html#cctv">
+        <div class="fifty">
+          <h3>CCTV</h3><img style="width: 75%; margin: 0 auto; display: block;" alt="50 inch tv icon" src="img/icon/icon_cctv.svg">
+        </div></a><a href="./offer.html#parking">
+        <div class="fifty">
+          <h3>Large Parking lot</h3><img style="width: 70%; margin: 0 auto; display: block;" alt="Free wifi icon" src="img/icon/icon_parking.svg"><br>
+        </div></a><a href="./offer.html#snack">
+        <div class="fifty">
+          <h3>Refreshments</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt="Kids corner" src="img/icon/icon_snack.svg"><br>
+        </div></a><a href="./offer.html#soap">
+        <div class="fifty">
+          <h3>Soap</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt="kids corner icon" src="img/icon/icon_soap.svg"><br>
+        </div></a><br>
+      <div><br>
+        <p> Tap to learn more! </p>
+      </div><br><br>
+      <!-- End White container-->
+    </div>
+  </div>
 </body>
-
-</html>

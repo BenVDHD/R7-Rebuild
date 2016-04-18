@@ -1,0 +1,129 @@
+//output:  $1.html
+include ./includes/header.jade
+    title Location - R7 Laundry 
+    meta(name='-"keywords"', content='Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean')
+    meta(name='title', content='Location | How to find us | R7 Laundry')
+    meta(name='description', content='R7 Laundry is conveniently located at 369 Cesar E Chavez Ave, Pontiac, MI 48342 right next to the Wisner Stadium and the Oakland County Pioneer Historical Society.')
+    script.
+      $(document).ready(function() {
+      $("#oStoreLoc").click(function() {
+      $("#cStoreLoc").slideToggle(300);
+      });
+      $("#oStoreHrs").click(function() {
+      $("#cStoreHrs").slideToggle(300);
+      });
+      $("#oFind").click(function() {
+      $("#cFind").slideToggle(300);
+      });
+      });
+  body
+    include ./includes/menu.jade
+    include ./includes/hero.jade
+    #container
+      .w
+        // White container
+        br
+        #oStoreLoc
+          h2  + Store Location 
+          br
+          #cStoreLoc.dropee
+            .g
+              p
+                | 369 Cezar E Chavez Ave,
+                br
+                |  Pontiac, MI, 48342
+        br
+        #oStoreHrs
+          h2  + Store Hours 
+          br
+          #cStoreHrs.dropee
+            .g
+              p
+                | 7:30 Am - 10:00 Pm
+                br
+                |  Lastload 8:30
+                br
+              .sd
+                div
+                  h2 x
+                p
+                  strong R7Laundry will be closed on
+                  br
+                  |  Christmas Day; Dec 25
+              .sds
+                div
+                  h2 x
+                p
+                  strong R7Laundry will be closed on
+                  br
+                  |  New Year's Day; Jan 1
+              .sd
+                div
+                  h2 x
+                p
+                  strong R7Laundry will be closed on
+                  br
+                  |  Christmas; Dec 25
+        br
+        #oFind
+          h2  + How to Find us 
+          br
+          #cFind.dropee
+            .g
+              p R7 Laundry is conviently located at:
+              p
+                | 369 Cezar E Chavez Ave,
+                br
+                | Pontiac, MI, 48342
+              br
+              a(href='/todo.html')
+                #todo.fifty
+              a(target='_blank', href='https://www.google.com/maps/dir//R7+Laundry,+369+Cesar+E+Chavez+Ave,+Pontiac,+MI+48342/@42.6016273,-83.4528073,11z/data=!4m12!1m3!3m2!1s0x0000000000000000:0x1beeb1d4ca15ad5e!2sR7+Laundry!4m7!1m0!1m5!1m1!1s0x8824be480d299667:0x1beeb1d4ca15ad5e!2m2!1d-83.3038811!2d42.6475694')
+                #map.fifty(alt='Get Directions')
+              hr
+        .g
+          a(href='tel:+12484818725')
+            .rbutton
+              p
+                | Store Phone:
+                br
+                em (248) 481-8725
+          a(href='mailto:manager@r7laundry.com')
+            .rbutton
+              p
+                | Email us:
+                br
+                em manager@r7laundry.com
+          br
+        // End White container
+      .offercube
+        br
+        br
+        h2.smargin What Our Location Offers.
+        br
+        a(href='./offer.html#cctv')
+          .fifty
+            h3 CCTV
+            img(style='width: 75%; margin: 0 auto; display: block;', alt='50 inch tv icon', src='img/icon/icon_cctv.svg')
+        a(href='./offer.html#parking')
+          .fifty
+            h3 Large Parking lot
+            img(style='width: 70%; margin: 0 auto; display: block;', alt='Free wifi icon', src='img/icon/icon_parking.svg')
+            br
+        a(href='./offer.html#snack')
+          .fifty
+            h3 Refreshments
+            img(style='width: 75%; margin: 0 auto;  display: block;', alt='Kids corner', src='img/icon/icon_snack.svg')
+            br
+        a(href='./offer.html#soap')
+          .fifty
+            h3 Soap
+            img(style='width: 75%; margin: 0 auto;  display: block;', alt='kids corner icon', src='img/icon/icon_soap.svg')
+            br
+        br
+        div
+          br
+          p  Tap to learn more! 
+        br
+        br
+        // End White container

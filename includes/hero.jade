@@ -1,0 +1,35 @@
+//output: $1.html
+//**hero.jade**
+include header.jade
+link(rel='stylesheet', href='../styles/main.min.css', type='text/css')
+
+script.
+  $(document).ready(function(){
+  $("#herojump1").click(function() {
+  $('#hero1').slideToggle(200);
+  });
+  $('#herojump2').click(function() {
+  $('#hero2').slideToggle(200);
+  });
+  })
+
+.hero
+  // Contain hero image
+  .herotype.hide#hero1
+    .blurbox
+      img(src="../img/icon/logo-white.svg" alt="R7 Logo")
+      h1.m_hide
+        | R7 LAUNDRY
+    a(href="#menu")
+      img.xsicon(src="../img/icon/icon_arrow.svg" alt="Continue")
+  .herotype.hide#hero2
+    h1.m_hide
+      | There's No Laundromat Quite
+      br
+      a.m_hide Like R7 Laundry
+  p 
+    a.heroactive#herojump1 &bull; 
+    a.herojump2 &bull; 
+    a.herojump3 &bull;
+a(name="menu")    
+  // end hero

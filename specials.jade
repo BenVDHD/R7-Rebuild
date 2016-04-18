@@ -1,0 +1,67 @@
+//output: $1.html
+include ./includes/header.jade
+    title Specials - R7 Laundry
+    meta(name='-"keywords"', content='Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean, offers, specials')
+    meta(name='title', content='Specials | Giveaways and events | R7 Laundry')
+    meta(name='description', content='R7 Laundry offers many giveaways including our laundry survival pack, free soap Wednesdays and many coupons. Enter to win our Laundry Survival pack!')
+  body
+    include ./includes/menu.jade
+    include ./includes/hero.jade
+    .container
+      .offercube
+        br
+        h3 Coupons.
+        img(src='img/icon/icon_coupon.svg')
+        p
+          | R7 Laundry offers many coupons. Follow us on our social media to get printable coupons, updates, and laundry tips and tricks.
+      #dsicon
+        a(href='https://www.facebook.com/R7Laundry/')
+          img.xxsicon(src='img/icon/icon_fb.svg', alt='FB')
+        a(href='https://twitter.com/r7laundry')
+          img.xxsicon(src='img/icon/icon_tw.svg', alt='TW')
+        a(href='https://plus.google.com/+R7laundry/')
+          img.xxsicon(src='img/icon/icon_gp.svg', alt='G+')
+      .offercube
+        br
+        hr
+      .offercube.g
+        br
+        h3 Monthly Drawing.
+        img(src='img/icon/icon_drawing.svg')
+        p
+          | R7 Laundry holds a drawing on the seventh of every month enter to win a Laundry Survival Pack.
+          a#LSPtogg Learn More >
+        script.
+          $(document).ready(function() {
+          $('#LSPtogg').click(function() {
+          $('#LSP').slideToggle(300);
+          });
+          })
+        #LSP.offercube.w
+          h3 The Laundry Survival Pack.
+          img(src='img/icon/icon_LSP.svg')
+          p
+            | The Laundry Survival Pack includes the following:
+          ul(style='padding: 0;')
+            li
+              | 1 Bottle of soap
+            li
+              | 1 bottle of softner
+            li
+              | 1 box of color-safe bleach
+            li
+              | 1 Candy of choice
+            li
+              | 2 Bags of chips
+          p(style='color: #ff8080;')
+            | // To enter ask for a raffle ticket at the front desk. //
+        br
+        hr
+      .offercube
+        br
+        h3 Free Soap.
+        img(src='img/icon/icon_soap.svg')
+      p
+        | R7 Laundry offers free soap EVERY wednesday. Come on in and ask the attendant for your free scoop of detergent.
+      #dsicon
+      br

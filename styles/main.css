@@ -81,24 +81,27 @@ h2.smargin {
   height: 50vw;
 }
 #greeting {
-  style="width: 100%;
- height: auto;
+  width: 100%;
+  height: auto;
   padding: .2em;
   background-color: #85e085;
-  cursor: hand;
   display: none;
+}
+#greeting p{
+  cursor: pointer;
 }
 #dsicon {
   margin: 0 auto;
   width: 100%;
   height: calc(15vw + 3px);
 }
-#menlogo {
+#mlogo {
   margin: 0 auto;
   width: 12.5vh;
   height: 100%;
   background-image: url('../img/icon/logo-gray.png');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #hemn img {
   width: 12.5vh;
@@ -110,15 +113,40 @@ h2.smargin {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.25);
 }
+#dactive{
+  display: none;
+}
 .hide {
   display: none;
 }
+.menu{
+  display: flex;
+  align-items: flex-start;
+  float: left;
+}
+.menu ul{
+  display: flex;
+  padding: 0;
+}
+.menu li{
+  margin: 0 15px;
+  padding: 0;
+}
 
-.menu li:hover {
+.menu li:hover{
+  text-decoration: underline;
+}
+.menu a{
+  font-weight: lighter;
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.hmenu li:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
 }
-.menu {
+.hmenu {
   display: none;
   position: fixed;
   z-index: 3;
@@ -133,14 +161,14 @@ h2.smargin {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-.menu p {
+.hmenu p {
   color: #737373;
   text-align: left;
 }
-.menu ul {
+.hmenu ul {
   padding: 0;
 }
-.menu li {
+.hmenu li {
   margin-bottom: 0;
   text-indent: 0;
   color: rgba(115, 115, 115, .8);
@@ -153,9 +181,7 @@ h2.smargin {
   padding-top: .8rem;
   border-bottom: solid 1px rgba(115, 115, 115, .3);
 }
-.menu.lvl1 li {
-  border-top: solid 1px rgba(115, 115, 115, 0.3);
-}
+
 .rbutton {
   width: 75%;
   height: auto;
@@ -306,6 +332,18 @@ img.mimg {
   margin-bottom: 0;
 }
 @media (min-width:800px) {
+  nav {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    height: 7ex;
+    align-items: center;
+  }
+
+  .d_hide{
+    display: none;
+  }
   .container{
     margin: 0 auto;
     width: 50%;
@@ -327,5 +365,21 @@ img.mimg {
   }
   .d25{
     width: 25%;
+  }
+  #mlogo{
+    height: 7ex;
+    width: 7ex;
+    margin: 0;
+    margin-right: -15px;
+  }
+  #menactive{
+    background-color: initial;
+    color: #2d2d2d;
+    text-decoration: underline;
+  }
+  #dactive{
+    display: inline-block;
+    margin-right: 1.10ex;
+    color: #ff6666;
   }
 }

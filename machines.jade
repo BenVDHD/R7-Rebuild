@@ -1,0 +1,95 @@
+//output: $1.html
+include ./includes/header.jade
+    title Our Machines - R7 Laundry
+    meta(name='-"keywords"', content='Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean')
+    meta(name='title', content='Our Machines | Fully Coin operated laundry | R7 Laundry')
+    meta(name='description', content='R7 Laundry offers top of the line washing equipment along with soap softener and bleach for its customers. In a safe clean environment.')
+  body
+    include ./includes/menu.jade
+    include ./includes/hero.jade
+    .offercube
+      a(name='giant')
+      br
+      h3 Wascomat Giant
+      img.mimg
+    p
+     The Wascomat giant is our largest most efficient washer. This washer is perfect for anyone looking to wash a lot of clothes, towels or comforters.
+    #dsicon
+      img#wtGianttogg.xsicon(src='img/icon/icon_30min.svg', alt='Wash Time: ~30min')
+      img#sGianttogg.xsicon(src='img/icon/', alt='Recommended amount of soap: 4 scoops')
+      img#wGianttogg.xsicon(src='img/icon/icon_70lbs.svg', alt='max weight: 70lbs')
+    script.
+      $(document).ready(function(){
+      $('#wtGianttogg').click(function(){
+      $('#wtGiant').slideToggle(300);
+      });
+      $('#sGianttogg').click(function(){
+      $('#sGiant').slideToggle(300);
+      });
+      $('#wGianttogg').click(function(){
+      $('#wGiant').slideToggle(300);
+      })
+      })
+    .offercube
+      #wtGiant.hide
+        p(style='color: #ff8080;')
+          | // This washers wash cycle is around 30 minutes please plan accordingly //
+      #sGiant.hide
+        p(style='color: #ff8080;')
+          | // R7 Laundry recommends using 4 scoops of soap, --ml of softener, and --ml of bleach if applicable //
+      #wGiant.hide
+        p(style='color: #ff8080;')
+          | // This washer can handle a max of 70 lbs. DO NOT overload as it is equipped with a safety mechanism that will turn the machine off //
+      br
+      hr
+    .offercube.g
+      a(name='')
+      br
+      h3 Name
+      img.mimg
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+        | sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
+        | sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    #dsicon.g
+      img.xsicon(src='', alt='Wash Time: ')
+      img.xsicon(src='', alt='')
+      img.xsicon(src='', alt='')
+    .offercube.g
+      br
+      a(name='')
+      hr
+    .offercube
+      a(name='')
+      br
+      h3 Name
+      img.mimg
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+        | sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
+        | sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    #dsicon
+      img.xsicon(src='', alt='Wash Time: ')
+      img.xsicon(src='', alt='')
+      img.xsicon(src='', alt='')
+    .offercube
+      br
+      a(name='')
+      hr
+    .offercube.g
+      a(name='')
+      br
+      h3 Name
+      img.mimg
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est et augue tincidunt convallis. Praesent et augue ante. Vivamus pretium facilisis augue quis tempor. Aliquam fringilla in sem at aliquet. Aliquam tincidunt mattis dui, a venenatis
+        | sapien tristique vitae. Praesent ornare enim quam, at molestie massa pretium tincidunt. Suspendisse ac sem vitae mauris venenatis laoreet eget ac mi. Nullam vel pharetra eros. Donec in dui quam. Quisque iaculis bibendum fringilla. Fusce suscipit
+        | sed dolor id lobortis. In ut faucibus libero, a egestas justo.
+    #dsicon.g
+      img.xsicon(src='', alt='Wash Time: ')
+      img.xsicon(src='', alt='')
+      img.xsicon(src='', alt='')
+    .offercube.g
+      br
+      a(name='')
+      hr
