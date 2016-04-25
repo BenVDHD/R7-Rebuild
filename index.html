@@ -22,20 +22,34 @@
   <!--output: $1.html-->
   <!--**hero.jade**-->
   <!--include header.jade-->
-  <!--link(rel='stylesheet', href='../styles/main.min.css', type='text/css')-->
+  <link rel="stylesheet" href="../styles/main.min.css" type="text/css">
+  <script>
+    $(document).ready(function() {
+    $("font#herojump1").click(function() {
+    $('#hero1').slideToggle(200);
+    });
+    $('font#herojump2').click(function() {
+    $('#hero2').slideDown(200);
+    });
+    })
+    
+  </script>
   <div class="hero">
     <!-- Contain hero image-->
     <div id="hero1" class="herotype">
-      <div class="blurbox"><img src="img/icon/logo-white.svg" alt="R7 Logo">
+      <div class="blurbox"><img src="../img/icon/logo-white.svg" alt="R7 Logo">
         <h1 class="m_hide">R7 LAUNDRY</h1>
-      </div>
-      <p>&bull; &bull; &bull;</p><a href="#bottomhero"><img src="img/icon/icon_arrow.svg" alt="Continue" class="xsicon"></a>
+      </div><a href="#menu"><img src="../img/icon/icon_arrow.svg" alt="Continue" class="xsicon"></a>
+      <div> <font id="herojump1" class="herorad heroactive">&bull;</font><font id="herojump2" class="herorad">&bull;</font><font id="herojump3" class="herorad">&bull;</font></div>
     </div>
     <div id="hero2" class="herotype hide">
-      <h1 class="m_hide">There's No Laundromat Quite<br><a class="m_hide">Like R7 Laundry</a></h1>
+      <div class="blurbox"><img src="../img/icon/logo-white.svg" alt="R7 Logo">
+        <h1 class="m_hide">R7 LAUNDRY</h1>
+      </div><a href="#menu"><img src="../img/icon/icon_arrow.svg" alt="Continue" class="xsicon"></a>
+      <div> <font id="herojump1" class="herorad heroactive">&bull;</font><font id="herojump2" class="herorad">&bull;</font><font id="herojump3" class="herorad">&bull;</font></div>
     </div>
-  </div><a name="bottomhero">   
-    <!-- end hero--></a>
+    <!-- end hero-->
+  </div>
   <!--output: $1.html-->
   <!--**menu.jade**-->
   <script>
@@ -90,57 +104,73 @@
   <div class="carousel m_hide"></div>
   <div class="w">
     <div class="container">
-      <!-- White container--><br><br>
-      <h1>What We're About.</h1><br>
+      <!-- White container--><img id="aboutico" alt="question icon" src="img/icon/icon_question.svg" class="xxsicon m_hide"><br class="d_hide">
+      <h1>What We're About.</h1>
       <p>R7 Laundry Is committed to becoming the best Laundromat in Pontiac. We keep our building meticulously clean, our attendants are always kind and knowledgeable. R7Laundry is thriving to become one of the most "tech savvy" laundromats around.</p><br><br>
       <!-- End White container-->
     </div>
-    <hr class="m_hide nmb">
+    <div class="g">
+      <div class="container">
+        <!-- Grey Container--><br><br>
+        <h1>What We Believe.</h1>
+        <ul>
+          <li class="li1">
+            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+          </li>
+          <li class="li2">
+            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+          </li>
+          <li class="li3">
+            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+          </li>
+          <li class="li4 m_hide">
+            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+          </li>
+          <li class="li5 m_hide">
+            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+          </li>
+          <li class="li6 m_hide">
+            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+          </li>
+        </ul><br><br>
+        <!-- End Grey Container-->
+      </div>
+    </div>
+    <div class="w">
+      <div class="container">
+        <!-- White container--><br><br>
+        <h1 class="smargin">What We Offer.</h1><a href="./offer.html#tv">
+          <div class="fifty d25">
+            <h3>50" TV</h3><img style="width: 75%; margin: 0 auto; display: block;" alt="50 inch tv icon" src="img/icon/icon_tv.svg">
+          </div></a><a href="./offer.html#wifi">
+          <div class="fifty d25">
+            <h3>Free Wifi</h3><img style="width: 75%; margin: 0 auto; display: block;" alt="Free wifi icon" src="img/icon/icon_wifi.svg"><br>
+          </div></a><a href="./offer.html#coin">
+          <div class="fifty d25">
+            <h3>Coin - Op</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt=" Coin-op icon" src="img/icon/icon_coin.svg"><br>
+          </div></a><a href="./offer.html#kids">
+          <div class="fifty d25">
+            <h3>Kids Corner</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt="kids corner icon" src="img/icon/icon_bear.svg"><br>
+          </div></a><br>
+        <!--mobile hidden--><a href="./offer.html#parking">
+          <div class="fifty d25 m_hide">
+            <h3>Large Parkinglot</h3><img style="width: 75%; margin: 0 auto; display: block;" alt="Larging parkinglot icon" src="img/icon/icon_parking.svg">
+          </div></a><a href="./offer.html#soap">
+          <div class="fifty d25 m_hide">
+            <h3>Soap</h3><img style="width: 75%; margin: 0 auto; display: block;" alt="Soap icon" src="img/icon/icon_soap.svg"><br>
+          </div></a><a href="./offer.html#coin">
+          <div class="fifty d25 m_hide">
+            <h3>Coin - Op</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt=" Coin-op icon" src="img/icon/icon_coin.svg"><br>
+          </div></a><a href="./offer.html#kids">
+          <div class="fifty d25 m_hide">
+            <h3>Kids Corner</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt="kids corner icon" src="img/icon/icon_bear.svg"><br>
+          </div></a><br>
+        <div><br>
+          <p>Click to learn more! </p>
+        </div><br><br>
+        <!-- End White container-->
+      </div>
+      <div class="blog hide"></div>
+    </div>
   </div>
-  <div class="g dFifty">
-    <!-- Grey Container--><br><br>
-    <h1>What We Believe.</h1>
-    <ul>
-      <li class="li1">
-        <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-      </li>
-      <li class="li2">
-        <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-      </li>
-      <li class="li3">
-        <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-      </li>
-      <li class="li4 m_hide">
-        <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-      </li>
-      <li class="li5 m_hide">
-        <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-      </li>
-      <li class="li6 m_hide">
-        <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-      </li>
-    </ul><br><br>
-    <!-- End Grey Container-->
-  </div>
-  <div class="w dFifty">
-    <!-- White container--><br><br>
-    <h1 class="smargin">What We Offer.</h1><a href="./offer.html#tv">
-      <div class="fifty d25">
-        <h3>50" TV</h3><img style="width: 75%; margin: 0 auto; display: block;" alt="50 inch tv icon" src="img/icon/icon_tv.svg">
-      </div></a><a href="./offer.html#wifi">
-      <div class="fifty d25">
-        <h3>Free Wifi</h3><img style="width: 75%; margin: 0 auto; display: block;" alt="Free wifi icon" src="img/icon/icon_wifi.svg"><br>
-      </div></a><a href="./offer.html#coin">
-      <div class="fifty d25">
-        <h3>Coin - Op</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt=" Coin-op icon" src="img/icon/icon_coin.svg"><br>
-      </div></a><a href="./offer.html#kids">
-      <div class="fifty d25">
-        <h3>Kids Corner</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt="kids corner icon" src="img/icon/icon_bear.svg"><br>
-      </div></a><br>
-    <div><br>
-      <p> Click to learn more! </p>
-    </div><br><br>
-    <!-- End White container-->
-  </div>
-  <div class="blog hide"></div>
 </body>

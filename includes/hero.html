@@ -1,41 +1,30 @@
 
-<!--output:  $1.html-->
-<!--**header.jade**--><!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
-    <link rel="stylesheet" href="styles/main.min.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- <meta name="viewport" content="user-scalable = yes">-->
-    <script type="text/javascript" src="script/jquery.js"></script>
-    <script type="text/javascript" src="script/smoothscroll.js"></script>
-  </head>
-  <!--**/header.jade**-->
-</html>
-<link rel="stylesheet" href="../styles/main.min.css" type="text/css">
+<!--include header.jade-->
+<link rel="stylesheet" href="../styles/main.min.css" type="text/css"/>
 <script>
-  $(document).ready(function(){
-  $("#herojump1").click(function() {
+  $(document).ready(function() {
+  $("font#herojump1").click(function() {
   $('#hero1').slideToggle(200);
   });
-  $('#herojump2').click(function() {
-  $('#hero2').slideToggle(200);
+  $('font#herojump2').click(function() {
+  $('#hero2').slideDown(200);
   });
   })
   
 </script>
 <div class="hero">
   <!-- Contain hero image-->
-  <div id="hero1" class="herotype hide">
-    <div class="blurbox"><img src="../img/icon/logo-white.svg" alt="R7 Logo">
+  <div id="hero1" class="herotype">
+    <div class="blurbox"><img src="../img/icon/logo-white.svg" alt="R7 Logo"/>
       <h1 class="m_hide">R7 LAUNDRY</h1>
-    </div><a href="#menu"><img src="../img/icon/icon_arrow.svg" alt="Continue" class="xsicon"></a>
+    </div><a href="#menu"><img src="../img/icon/icon_arrow.svg" alt="Continue" class="xsicon"/></a>
+    <div> <font id="herojump1" class="herorad heroactive">&bull;</font><font id="herojump2" class="herorad">&bull;</font><font id="herojump3" class="herorad">&bull;</font></div>
   </div>
   <div id="hero2" class="herotype hide">
-    <h1 class="m_hide">There's No Laundromat Quite<br><a class="m_hide">Like R7 Laundry</a></h1>
+    <div class="blurbox"><img src="../img/icon/logo-white.svg" alt="R7 Logo"/>
+      <h1 class="m_hide">R7 LAUNDRY</h1>
+    </div><a href="#menu"><img src="../img/icon/icon_arrow.svg" alt="Continue" class="xsicon"/></a>
+    <div> <font id="herojump1" class="herorad heroactive">&bull;</font><font id="herojump2" class="herorad">&bull;</font><font id="herojump3" class="herorad">&bull;</font></div>
   </div>
-  <p> <a id="herojump1" class="heroactive">&bull; </a><a class="herojump2">&bull; </a><a class="herojump3">&bull;</a></p>
-</div><a name="menu">   
-  <!-- end hero--></a>
+  <!-- end hero-->
+</div>
