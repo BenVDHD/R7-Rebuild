@@ -1,6 +1,11 @@
 //Output: $1.css
 @charset "UTF-8"
 @import url(https://fonts.googleapis.com/css?family=PT+Sans)
+
+//color variables
+$dgray: #3d3d3d
+$crit: #ff6666
+
 footer
   width: 100%
   height: 200px
@@ -9,7 +14,7 @@ footer
 body
   font-family: 'Lato', sans-serif
   font-weight: lighter
-  color: #3d3d3d
+  color: $dgray
 
 /* css styles
 
@@ -20,7 +25,7 @@ a
 h1, h2, h3, p
   font-family: 'Lato', sans-serif
   font-weight: lighter
-  color: #3d3d3d
+  color: $dgray
 
 h1, h2
   padding: 0
@@ -62,8 +67,8 @@ h2.smargin
 
 #LSP
   display: none
-  border-top: solid 1px #3d3d3d
-  border-bottom: solid 1px #3d3d3d
+  border-top: solid 1px $dgray
+  border-bottom: solid 1px $dgray
 
 #LSPtogg
   text-decoration: underline
@@ -132,7 +137,7 @@ h2.smargin
       text-decoration: underline
   a
     font-weight: lighter
-    color: #3d3d3d
+    color: $dgray
     text-decoration: none
 
 .xsicon
@@ -235,10 +240,10 @@ img.mimg
 
 .sd
   padding: .20rem
-  background-color: #ff6666
+  background-color: $crit
 
 .tb
-  border: solid .5px #3d3d3d
+  border: solid .5px $dgray
 
 .fifty
   float: left
@@ -271,7 +276,7 @@ img.mimg
   width: 100%
   height: 100%
   background-image: url('../img/hero/hero_triangle.jpg')
-  background-color: #3d3d3d
+  background-color: $dgray
   height: 100vh
   background-repeat: repeat
   background-size: auto
@@ -304,11 +309,11 @@ img.mimg
   .blurbox
     width: auto
     height: auto
-    background-color: #3d3d3d
+    background-color: $dgray
     display: flex
     text-align: center
     padding: 15px
-    box-shadow:  0 0 25vh 5vw #3d3d3d
+    box-shadow:  0 0 25vh 5vw $dgray
     flex-direction: column
     justify-content: center
     align-items: center
@@ -351,12 +356,6 @@ img.mimg
   width: 15%
   height: auto
 
-.carousel
-  width: 100%
-  height: 33.33vh
-  background-color: purple
-  clear: both
-
 .blog
   width: 100%
   height: 100vh
@@ -375,6 +374,7 @@ img.mimg
 
 @media (min-width: 800px)
   nav
+    border-bottom: solid 1px $dgray
     min-width: 837px
     z-index: 10
     position: absolute
@@ -416,4 +416,4 @@ img.mimg
   #dactive
     display: inline-block
     margin-right: 1.10ex
-    color: #ff6666
+    color: $crit
