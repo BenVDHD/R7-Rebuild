@@ -11,7 +11,7 @@
     <!-- <meta name="viewport" content="user-scalable = yes">-->
     <!--insert jquery on needed pages-->
     <script type="text/javascript" src="script/jquery.js"></script>
-    <!--script(type='text/javascript', src='script/smoothscroll.js')-->
+    <script type="text/javascript" src="script/smoothscroll.js"></script>
     <title>About us. - R7 Laundry</title>
     <meta name="-" content="Laundromat, Pontiac, R7 Laundry, Wash, Dry, Fold, Dropoff, service, professional laundry services, clothes, clean">
     <meta name="title" content="Best Laundromat in Pontiac | R7 Laundry">
@@ -40,6 +40,7 @@
     <div id="hero1" class="herotype">
       <div class="blurbox"><img src="img/icon/logo-white.svg" alt="R7 Logo">
         <h1 class="m_hide">R7 LAUNDRY</h1>
+        <div class="underlinefull"></div>
       </div><a href="#menu"><img src="img/icon/icon_arrow.svg" alt="Continue" class="xsicon"></a>
       <div> <font id="herojump1" class="herorad heroactive">&bull;</font><font id="herojump2" class="herorad">&bull;</font><font id="herojump3" class="herorad">&bull;</font></div>
     </div><a name="menu"></a>
@@ -75,71 +76,84 @@
       });
       })
     </script>
+    <div class="mmen"></div>
     <div id="hmen" style="width: 12.5vh; height: 100%; background-image: url('img/icon/icon_menu.png'); background-size: contain; float: left;" class="d_hide"></div>
     <div id="mlogo"></div>
     <div class="m_hide menu">
       <ul>
         <li id="menactive"><a href="index.html">
             <div id="dactive">•</div>About us.</a></li>
+        <li class="important"><a href="location.html">
+             
+            How to Find us.</a></li>
+        <li><a href="dropoffs.html">Drop off service.</a></li>
         <li><a href="machines.html">Our Machines.</a></li>
-        <li><a href="dropoffs.html"> Drop off service.</a></li>
-        <li><a href="offer.html">What We Offer.</a></li>
-        <li><a href="location.html">How to Find us.</a></li>
-        <li><a href="specials.html">Specials.</a></li>
+        <li><a href="offer.html">
+             
+            What We Offer.</a></li>
+        <li><a href="specials.html">
+             
+            Specials.</a></li>
       </ul>
     </div>
     <div class="hmenu">
       <p>X</p>
       <ul><a href="index.html">
-          <li id="menactive" class="lvl1">About us.</li></a><a href="machines.html">
-          <li>Our Machines.</li></a><a href="dropoffs.html">
-          <li>Drop off service.</li></a><a href="offer.html">
-          <li>What We Offer.</li></a><a href="location.html">
-          <li>How to Find us.</li><a href="specials.html">
-            <li>Specials.</li></a></a></ul>
+          <li id="menactive" class="lvl1">About us.</li></a><a href="location.html">
+          <li>How to Find us.</li></a><a href="dropoffs.html">
+          <li>Drop off service.</li></a><a href="machines.html">
+          <li>Our Machines.</li></a><a href="offer.html">
+          <li>What We Offer.</li></a><a href="specials.html">
+          <li>Specials.</li></a></ul>
     </div>
   </nav>
   <!--**/menu.jade**-->
   <div class="menhold">&nbsp;</div>
-  <script src="script/greeting.js"></script>
-  <div class="w">
+  <!--script(src='script/greeting.js')-->
+  <script src="script/paralax.js"></script>
+  <section class="about w">
     <div class="container">
       <!-- White container--><img id="aboutico" alt="question icon" src="img/icon/icon_question.svg" class="xxsicon m_hide"><br class="d_hide">
       <h1>What We're About.</h1>
-      <p>R7 Laundry Is committed to becoming the best Laundromat in Pontiac. We keep our building meticulously clean, our attendants are always kind and knowledgeable. R7Laundry is thriving to become one of the most "tech savvy" laundromats around.</p><br><br>
-      <!-- End White container-->
+      <div class="underline"></div>
+      <p><strong>R7 Laundry </strong>Is committed to becoming the <strong>best Laundromat in Pontiac. </strong>We keep our building <strong>meticulously clean</strong>, our attendants are always kind and knowledgeable. R7 Laundry is thriving to become one of the most "tech savvy" laundromats around.</p><br><br>
+      <!-- End White container  -->
     </div>
-    <div class="g">
-      <div class="container">
-        <!-- Grey Container--><br><br>
-        <h1>What We Believe.</h1>
-        <ul>
-          <li class="li1">
-            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-          </li>
-          <li class="li2">
-            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-          </li>
-          <li class="li3">
-            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-          </li>
-          <li class="li4 m_hide">
-            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-          </li>
-          <li class="li5 m_hide">
-            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-          </li>
-          <li class="li6 m_hide">
-            <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
-          </li>
-        </ul><br><br>
-        <!-- End Grey Container-->
-      </div>
+  </section>
+  <section id="plax1" class="believe parallax">
+    <div class="container">
+      <!-- Grey Container--><br><br>
+      <h1>What We Believe.</h1>
+      <div class="underline"></div>
+      <ul>
+        <li>
+          <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+        </li>
+        <li>
+          <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+        </li>
+        <li>
+          <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+        </li>
+        <li class="m_hide">
+          <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+        </li>
+        <li class="m_hide">
+          <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+        </li>
+        <li class="m_hide">
+          <p><strong>We believe:</strong> That our Laundromat should always be clean.</p>
+        </li>
+      </ul><br><br>
+      <!-- End Grey Container-->
     </div>
-    <div class="w">
-      <div class="container">
-        <!-- White container--><br><br>
-        <h1 class="smargin">What We Offer.</h1><a href="./offer.html#tv">
+  </section>
+  <div class="w">
+    <div class="container">
+      <!-- White container--><br><br>
+      <h1 class="smargin">What We Offer.</h1>
+      <div class="underline"></div>
+      <section class="offers"><a href="./offer.html#tv">
           <div class="fifty d25">
             <h3>50" TV</h3><img style="width: 75%; margin: 0 auto; display: block;" alt="50 inch tv icon" src="img/icon/icon_tv.svg">
           </div></a><a href="./offer.html#wifi">
@@ -164,13 +178,13 @@
           </div></a><a href="./offer.html#kids">
           <div class="fifty d25 m_hide">
             <h3>Kids Corner</h3><img style="width: 75%; margin: 0 auto;  display: block;" alt="kids corner icon" src="img/icon/icon_bear.svg"><br>
-          </div></a><br>
-        <div><br>
-          <p>Click to learn more! </p>
-        </div><br><br>
-        <!-- End White container-->
-      </div>
-      <div class="blog hide"></div>
+          </div></a>
+      </section><br>
+      <section class="learnm">
+        <p>Click to learn more!</p>
+      </section><br><br>
+      <!-- End White container-->
     </div>
+    <div class="blog hide"></div>
   </div>
 </body>
